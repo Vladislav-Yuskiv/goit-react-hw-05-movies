@@ -1,0 +1,38 @@
+.form{
+    width: 400px;
+    background-color: rgb(226, 224, 223);
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.input{
+    width: 230px;
+    height: 30px;
+    border: none;
+    margin-left: 45px;
+    margin-top: 14px;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.button{
+    border:none ;
+    background-color: cornsilk;
+    height: 30px;
+    border-radius: 3px;
+    margin-left: 10px;
+    width: 80px;
+    transition: 250ms ease;
+    font-size: 14px;
+    margin-right: 20px;
+
+}
+.button:hover{
+    background-color: cornflowerblue;
+}
+.input::placeholder{
+    letter-spacing: 1px;
+    font-family: cursive;
+    font-size: 16px;
+}

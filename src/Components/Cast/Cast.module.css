@@ -1,0 +1,29 @@
+.list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  flex-wrap: wrap;
+}
+.item {
+  margin-right: 25px;
+  flex: 0 0 22%;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+.content {
+  color: burlywood;
+  font-size: 18px;
+}
+.span {
+  color: black;
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.name {
+  color: brown;
+}

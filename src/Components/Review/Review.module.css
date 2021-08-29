@@ -1,0 +1,27 @@
+.list {
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.item {
+  margin-bottom: 25px;
+  border: 1px solid black;
+  padding: 15px;
+}
+.content {
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.author {
+  color: brown;
+}
+.span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.sorry {
+  font-size: 25px;
+  color: brown;
+}
