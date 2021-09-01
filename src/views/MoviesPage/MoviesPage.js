@@ -41,7 +41,7 @@ function MoviesPage() {
                 <button type="submit" className={s.button}>Search</button>
             </form>
 
-            <FilmList films={searchFilm}/>
+            <FilmList films={searchFilm}  location={location}/>
         </>
 
 

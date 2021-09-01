@@ -1,6 +1,6 @@
 import { fetchMovieId } from '../../service/fetch-movies';
 import React, { useState, useEffect } from 'react';
-import { useParams, useRouteMatch, NavLink, Route, useHistory } from 'react-router-dom';
+import { useParams, useRouteMatch, NavLink, Route, useHistory , useLocation} from 'react-router-dom';
 import { lazy, Suspense } from "react";
 import s from './MovieDetailsPage.module.css';
 import defaultPhoto from './404PosterNotFound.jpg';
@@ -13,20 +13,19 @@ function MovieDetailsPage() {
     const { filmId } = useParams();
     const { url, path } = useRouteMatch();
     const history = useHistory();
+    const location = useLocation();
 
     useEffect(() => {
 
         fetchMovieId(filmId).then(film => setFilm(film));
 
     }, [filmId])
-
-    const onBtnClick = () => {
-         history.goBack()
+    const onGoBack = () => {
+        history.push(location?.state?.from ?? `/`)
     }
-
     return (
         <>
-        <button className={s.goBack} type="button" onClick={onBtnClick}>Go Back</button>
+        <button className={s.goBack} type="button" onClick={onGoBack}>Go Back</button>
         <div className={s.cart}>
             <div className={s.imageContainer}>
             <img
